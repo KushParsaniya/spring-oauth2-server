@@ -24,7 +24,7 @@ This project implements an OAuth2 authorization server using Spring Boot 3.2.0, 
 
 4. **Token Introspection Endpoint:**
    - URL: `http://localhost:8080/oauth2/introspect`
-   - Method: GET
+   - Method: POST
    - Parameters: `token`
    - Description: Verifies the validity and scope of an access token.
 
