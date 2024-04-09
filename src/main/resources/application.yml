@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: oauth2-resource-server
+
+  datasource:
+    url: jdbc:postgresql://${env.DATABASE_HOST}:${env.DATABASE_PORT}/${env.DATABASE_NAME}
+    username: ${env.DATABASE_USER}
+    password: ${env.DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
