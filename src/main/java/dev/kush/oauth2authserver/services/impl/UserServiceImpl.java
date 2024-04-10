@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
 
     private Role findOrCreateRole(String roleName) {
         return roleRepository.findRoleByRoleName(roleName)
-                .orElseGet(() -> roleRepository.save(new Role("USER")));
+                .orElseGet(() -> roleRepository.save(new Role(roleName)));
     }
 
 }
